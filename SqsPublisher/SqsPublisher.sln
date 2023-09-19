@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqsPublisher", "SqsPublisher\SqsPublisher.csproj", "{AC9D1F53-F0E9-4F99-8157-B7443C99719E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqsConsumer", "SqsConsumer\SqsConsumer.csproj", "{C53B882A-9380-4AE4-85EF-6B67904CDDEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC9D1F53-F0E9-4F99-8157-B7443C99719E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9D1F53-F0E9-4F99-8157-B7443C99719E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9D1F53-F0E9-4F99-8157-B7443C99719E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9D1F53-F0E9-4F99-8157-B7443C99719E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53B882A-9380-4AE4-85EF-6B67904CDDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53B882A-9380-4AE4-85EF-6B67904CDDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53B882A-9380-4AE4-85EF-6B67904CDDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53B882A-9380-4AE4-85EF-6B67904CDDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
