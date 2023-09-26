@@ -23,7 +23,7 @@ while (!cts.IsCancellationRequested)
         Console.WriteLine($"Message Id: {message.MessageId}");
         Console.WriteLine($"Message Body: {message.Body}");
 
-        await sqsClient.DeleteMessageAsync(queueUrlResponse.QueueUrl, message.ReceiptHandle);
+      //  await sqsClient.DeleteMessageAsync(queueUrlResponse.QueueUrl, message.ReceiptHandle);
     }
     await Task.Delay(3000);
 }
