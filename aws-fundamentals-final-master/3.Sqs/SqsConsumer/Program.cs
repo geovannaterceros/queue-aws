@@ -4,7 +4,7 @@ using Amazon.SQS.Model;
 var cts = new CancellationTokenSource();
 var sqsClient = new AmazonSQSClient();
 
-var queueUrlResponse = await sqsClient.GetQueueUrlAsync("customers");
+var queueUrlResponse = await sqsClient.GetQueueUrlAsync("customers2");
 
 var receiveMessageRequest = new ReceiveMessageRequest
 {
@@ -13,8 +13,8 @@ var receiveMessageRequest = new ReceiveMessageRequest
     MessageAttributeNames = new List<string>{ "All" }
 };
 
-while (!cts.IsCancellationRequested)
-{
+ while (!cts.IsCancellationRequested)
+ {
     var response = await sqsClient.ReceiveMessageAsync(receiveMessageRequest, cts.Token);
     
     foreach (var message in response.Messages)

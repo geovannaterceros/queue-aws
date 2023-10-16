@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using Amazon;
 using Amazon.SQS;
 using Amazon.SQS.Model;
 using SqsPublisher;
@@ -15,7 +14,7 @@ var customer = new CustomerCreated
     GitHubUsername = "nickchapsas"
 };
 
-var queueUrlResponse = await sqsClient.GetQueueUrlAsync("customers");
+var queueUrlResponse = await sqsClient.GetQueueUrlAsync("customers2");
 
 var sendMessageRequest = new SendMessageRequest
 {
